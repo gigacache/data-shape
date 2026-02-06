@@ -1,0 +1,7 @@
+parameters:
+    level: 5          # strictness level (0-9)
+    paths:
+        - src
+        - tests
+    checkExplicitMixed: false
+    inferPrivatePropertyTypeFromConstructor: true

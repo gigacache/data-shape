@@ -1,0 +1,27 @@
+{
+    "name": "gigacahe/data-shape",
+    "description": "Base classes and utilities for mapping, transforming, and handling structured data in PHP.",
+    "type": "library",
+    "keywords": ["data", "mapper", "mapping", "transformation", "arrays", "objects", "php"],
+    "require-dev": {
+        "phpunit/phpunit": "^13.0",
+        "phpstan/phpstan": "^2.1",
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+        "cs:check": "vendor/bin/phpcs --standard=PSR12 src tests",
+        "cs:fix": "vendor/bin/phpcbf --standard=PSR12 src tests",
+        "test": "vendor/bin/phpunit",
+        "stan": "vendor/bin/phpstan analyse"
+    },
+    "autoload": {
+        "psr-4": {
+            "DataShape\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DataShape\\Tests\\": "tests/"
+        }
+    }
+}
