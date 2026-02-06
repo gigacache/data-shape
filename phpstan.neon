@@ -5,3 +5,6 @@ parameters:
         - tests
     checkExplicitMixed: false
     inferPrivatePropertyTypeFromConstructor: true
+    ignoreErrors:
+        # Ignore "unsafe new static()" everywhere
+        - '#Unsafe usage of new static\(\)\.#'
